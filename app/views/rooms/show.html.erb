@@ -1,10 +1,33 @@
 <h1>Chat room</h1>
 
-<div id="messages">
-  <%= render @messages %>
+<div class="chat">
+  <div>
+    <div class="chat-list">
+      <div class="chat-item actived" data-room-id="1">
+        Framgia Vietnam
+        <span class="bubble hidden">
+          <span>0</span>
+        </span>
+      </div>
+      <div class="chat-item" data-room-id="2">
+        Framgia Japan
+        <span class="bubble hidden">
+          <span>0</span>
+        </span>
+      </div>
+      <div class="chat-item" data-room-id="3">
+        Framgia Bangladesh
+        <span class="bubble hidden">
+          <span>0</span>
+        </span>
+      </div>
+    </div>
+    <div class="chat-message">
+      <span></span>
+    </div>
+  </div>
+  <div class="clear-fix"></div>
+  <div>
+    <textarea class="message-box"></textarea>
+  </div>
 </div>
-
-<form>
-  <label for="">Say something:</label><br />
-  <textarea data-behavior="room_speaker"></textarea>
-</form>
